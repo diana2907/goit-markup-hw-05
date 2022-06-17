@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -31,12 +32,12 @@
 
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="nav-list-link link" href="./index.html"
-                >Студия</a
-              >
+              <a class="nav-list-link link" href="./index.html">Студия</a>
             </li>
             <li class="nav-item">
-              <a class="nav-list-link link current" href="./portfolio.html">Портфолио</a              >
+              <a class="nav-list-link link current" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-list-link link" href="">Контакты</a>
@@ -46,25 +47,27 @@
 
         <ul class="contacts-list list">
           <li class="contact-item">
-            <a class="contacts-link link" href="mailto:info@devstudio.com">                
+            <a class="contacts-link link" href="mailto:info@devstudio.com">
               <svg class="header-icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope-1"></use>
-                </svg>
-              info@devstudio.com</a>
+                <use href="./images/icons.svg#icon-envelope-1"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li class="contact-item">
             <a class="contacts-link link" href="tel:+380991111111">
-               <svg class="header-icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone-1"></use>
+              <svg class="header-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone-1"></use>
               </svg>
-              +38 099 111 11 11</a>
+              +38 099 111 11 11</a
+            >
           </li>
         </ul>
       </div>
     </header>
 
     <main>
-      <section class="projects section">
+      <section class="projects section" data-aos="zoom-in">
         <div class="container">
           <ul class="filter-list list">
             <li class="filter-item">
@@ -77,7 +80,7 @@
             </li>
             <li class="filter-item">
               <button class="filter-button" type="button">Приложения</button>
-            </li> 
+            </li>
             <li class="filter-item">
               <button class="filter-button" type="button">Дизайн</button>
             </li>
@@ -88,24 +91,40 @@
 
           <ul class="list-projects list">
             <li class="projects-item">
-              <img
-                src="./images/imgportfolio/imgtech.jpg"
-                alt="сайт"
-                width="370"
-                height="294"
-              />
+              <div class="project-box">
+                <img
+                  src="./images/imgportfolio/imgtech.jpg"
+                  alt="сайт"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-paragraph">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+
               <div class="project-text">
                 <h2 class="projects-title">Технокряк</h2>
                 <p class="projects-description">Веб-сайт</p>
               </div>
             </li>
             <li class="projects-item">
-              <img
-                src="./images/imgportfolio/imgbas.jpg"
-                alt="дизайн"
-                width="370"
-                height="294"
-              />
+              <div class="project-box">
+                <img
+                  src="./images/imgportfolio/imgbas.jpg"
+                  alt="дизайн"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-paragraph">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+
               <div class="project-text">
                 <h2 class="projects-title">
                   Постер <span lang="en">New Orlean vs Golden Star</span>
@@ -114,12 +133,20 @@
               </div>
             </li>
             <li class="projects-item">
-              <img
-                src="./images/imgportfolio/imgfood.jpg"
-                alt="приложение"
-                width="370"
-                height="294"
-              />
+              <div class="project-box">
+                <img
+                  src="./images/imgportfolio/imgfood.jpg"
+                  alt="приложение"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-paragraph">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+
               <div class="project-text">
                 <h2 class="projects-title">
                   Ресторан <span lang="en">Seafood</span>
@@ -128,12 +155,20 @@
               </div>
             </li>
             <li class="projects-item">
-              <img
-                src="./images/imgportfolio/imghear.jpg"
-                alt="маркетинг"
-                width="370"
-                height="294"
-              />
+              <div class="project-box">
+                <img
+                  src="./images/imgportfolio/imghear.jpg"
+                  alt="маркетинг"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-paragraph">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+
               <div class="project-text">
                 <h2 class="projects-title">
                   Проект <span lang="en">Prime</span>
@@ -142,24 +177,40 @@
               </div>
             </li>
             <li class="projects-item">
-              <img
-                src="./images/imgportfolio/imgbox.jpg"
-                alt="приложение"
-                width="370"
-                height="294"
-              />
+              <div class="project-box">
+                <img
+                  src="./images/imgportfolio/imgbox.jpg"
+                  alt="приложение"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-paragraph">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+
               <div class="project-text">
                 <h2 class="projects-title">Проект Boxes</h2>
                 <p class="projects-description">Приложение</p>
               </div>
             </li>
             <li class="projects-item">
-              <img
-                src="./images/imgportfolio/imgcomp.jpg"
-                alt="сайт"
-                width="370"
-                height="294"
-              />
+              <div class="project-box">
+                <img
+                  src="./images/imgportfolio/imgcomp.jpg"
+                  alt="сайт"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-paragraph">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+
               <div class="project-text">
                 <h2 class="projects-title" lang="en">
                   Inspiration has no Borders
@@ -168,12 +219,20 @@
               </div>
             </li>
             <li class="projects-item">
-              <img
-                src="./images/imgportfolio/imgbook.jpg"
-                alt="дизайн"
-                width="370"
-                height="294"
-              />
+              <div class="project-box">
+                <img
+                  src="./images/imgportfolio/imgbook.jpg"
+                  alt="дизайн"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-paragraph">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+
               <div class="project-text">
                 <h2 class="projects-title">
                   Издание <span lang="en">Limited Edition</span>
@@ -182,12 +241,20 @@
               </div>
             </li>
             <li class="projects-item">
-              <img
-                src="./images/imgportfolio/imgtitle.jpg"
-                alt="маркетинг"
-                width="370"
-                height="294"
-              />
+              <div class="project-box">
+                <img
+                  src="./images/imgportfolio/imgtitle.jpg"
+                  alt="маркетинг"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-paragraph">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+
               <div class="project-text">
                 <h2 class="projects-title">
                   Проект <span lang="en">LAB</span>
@@ -196,12 +263,20 @@
               </div>
             </li>
             <li class="projects-item">
-              <img
-                src="./images/imgportfolio/imglaptop.jpg"
-                alt="приложение"
-                width="370"
-                height="294"
-              />
+              <div class="project-box">
+                <img
+                  src="./images/imgportfolio/imglaptop.jpg"
+                  alt="приложение"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-paragraph">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+
               <div class="project-text">
                 <h2 class="projects-title" lang="en">Growing Business</h2>
                 <p class="projects-description">Приложение</p>
@@ -215,65 +290,69 @@
     <footer class="footer">
       <div class="footer-wrap container">
         <div class="footer-left">
-        <a class="logo link" href="/">
-          <span class="logo-part">Web</span
-          ><span class="logo-light">Studio</span>
-        </a>
-        <address class="address">
-          <ul class="address-list list">
-            <li class="adress-item">
-              <a class="address-destination link" href=""
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="adress-item">
-              <a class="address-link link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li class="adress-item">
-              <a class="address-link link" href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-
-          <div class="soc-contacts">
-            <h2 class="title-soc">присоединяйтесь</h2>
-            <ul class="soc-list footer-soc-list">
-              <li class="soc-item footer-soc-item">
-                <a href="" class="soc-link footer-soc-link">
-                  <svg class="soc-icons footer-soc-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
+          <a class="logo link" href="/">
+            <span class="logo-part">Web</span
+            ><span class="logo-light">Studio</span>
+          </a>
+          <address class="address">
+            <ul class="address-list list">
+              <li class="adress-item">
+                <a class="address-destination link" href=""
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
-              <li class="soc-item footer-soc-item">
-                <a href="" class="soc-link footer-soc-link">
-                  <svg class="soc-icons footer-soc-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
+              <li class="adress-item">
+                <a class="address-link link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
               </li>
-              <li class="soc-item footer-soc-item">
-                <a href="" class="soc-link footer-soc-link">
-                  <svg class="soc-icons footer-soc-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="soc-item footer-soc-item">
-                <a href="" class="soc-link footer-soc-link">
-                  <svg class="soc-icons footer-soc-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
+              <li class="adress-item">
+                <a class="address-link link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
-          </div>
+          </address>
+        </div>
+
+        <div class="soc-contacts">
+          <h2 class="title-soc">присоединяйтесь</h2>
+          <ul class="soc-list footer-soc-list">
+            <li class="soc-item footer-soc-item">
+              <a href="" class="soc-link footer-soc-link">
+                <svg class="soc-icons footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-item footer-soc-item">
+              <a href="" class="soc-link footer-soc-link">
+                <svg class="soc-icons footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-item footer-soc-item">
+              <a href="" class="soc-link footer-soc-link">
+                <svg class="soc-icons footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-item footer-soc-item">
+              <a href="" class="soc-link footer-soc-link">
+                <svg class="soc-icons footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
